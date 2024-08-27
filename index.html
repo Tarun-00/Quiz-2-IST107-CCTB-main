@@ -279,14 +279,14 @@ Instructor: Washington Valencia
     <!-- JavaScript -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Replace placeholders with dynamic data
-        document.getElementById("userName").textContent = "Kabane"; // Replace with the actual full name
+       
+        document.getElementById("userName").textContent = "Kabane";
         document.getElementById("currentDate").textContent =
-          new Date().toLocaleDateString(); // Current date
+          new Date().toLocaleDateString(); 
         document.getElementById("userEmail").textContent =
-          "tarun.gahlot7627@gmail.com"; // Replace with actual email
+          "tarun.gahlot7627@gmail.com"; 
 
-        // Function to change the user's name
+        
         window.changeName = function () {
           let name = prompt("Please enter your full name:");
           while (!name || !isNaN(name)) {
@@ -297,7 +297,7 @@ Instructor: Washington Valencia
         };
       });
 
-      // Function to generate a list of items
+     
       function generateItemList() {
         let numberOfItems = parseInt(
           prompt("How many items would you like in the list? (1-10)")
@@ -314,7 +314,7 @@ Instructor: Washington Valencia
         }
 
         let itemList = document.getElementById("itemList");
-        itemList.innerHTML = ""; // Clear previous list items
+        itemList.innerHTML = ""; 
         for (let i = 1; i <= numberOfItems; i++) {
           let listItem = document.createElement("li");
           listItem.textContent = `Item ${i}`;
